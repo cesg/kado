@@ -1,0 +1,43 @@
+@import "bulma";
+@import "editor";
+
+main {
+  min-height: 100vh;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.content-between {
+justify-content: space-between;
+}
+
+.menu-list .router-link-active {
+  font-weight: bolder;
+  border-left: $link solid 2px;
+}
+
+a.is-flex {
+  align-items: center;
+}
+
+a span.icon {
+  margin-right: 0.2em;
+}
+
+span.icon svg {
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  height: inherit;
+}
+
+svg.is--empty {
+  stroke: $grey;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

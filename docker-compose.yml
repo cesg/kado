@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  db:
+    container_name: "kado_db"
+    image: "postgres:12-alpine"
+    restart: unless-stopped
+    environment:
+        POSTGRES_DB: kado
+        POSTGRES_USER: dbadmin
+        POSTGRES_PASSWORD: secret
+    ports:
+          - "54320:5432"
+
+  redis:
+    container_name: "kado_redis"
+    image: "redis:alpine"
+    restart: unless-stopped
+    ports:
+      - "63790:6379"
