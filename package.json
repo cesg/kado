@@ -18,7 +18,7 @@
   "dependencies": {
     "@hapi/boom": "^7.4.11",
     "axios": "^0.19.0",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "bee-queue": "^1.2.2",
     "date-fns": "^1.30.1",
     "dotenv": "^8.2.0",
